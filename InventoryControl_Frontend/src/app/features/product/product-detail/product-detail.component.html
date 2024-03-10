@@ -1,0 +1,29 @@
+<div class="container">
+    <div *ngIf="product" class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Product Details</h4>
+          </div>
+          <div class="card-body text-center">
+                      
+            <div class="mt-4">
+              <h3>{{ product.productName }} {{ product.productName }}</h3>
+              <p><strong>Product ID:</strong> {{ product.id}}</p>
+              
+              <p><strong>Product Description:</strong> {{ product.productDescription}}</p>
+              <p><strong>Product Price:</strong> {{ product.productPrice}}</p>
+              <p><strong>Product Quantity:</strong> {{ product.productQuantity}}</p>
+              
+              
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            
+            <button class="btn btn-primary" (click)="goBack()">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngIf="category" class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Category Details</h4>
+          </div>
+          <div class="card-body text-center">
+                      
+            <div class="mt-4">
+              <h3>{{ category.categoryName }} {{ category.categoryName }}</h3>
+              <p><strong>Category ID:</strong> {{ category.id}}</p>
+              <p><strong>Category Description:</strong> {{ category.categoryDescription }}</p>
+              
+              
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            
+            <button class="btn btn-primary" (click)="goBack()">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
